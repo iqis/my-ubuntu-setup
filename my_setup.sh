@@ -8,6 +8,7 @@ apt install -y r-base
 
 # emacs, ess
 apt install -y emacs ess
+[ -f .emacs ] && cp .emacs ~/ || echo ".emacs not found"
 
 # r packages
 apt install libcurl4-openssl-dev libssl-dev libxml2-dev # system dependencies

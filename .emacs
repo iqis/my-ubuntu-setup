@@ -18,18 +18,20 @@
   (unless (package-installed-p package)
     (package-install package)))
 
-;; ;; auto-complete
+;; auto-complete
 (require 'auto-complete)
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/site-lisp/auto-complete/dict")
 (ac-config-default)
 (global-auto-complete-mode t)
 
-;; ;; ido-mode
+;; ido-mode
+;; https://masteringemacs.org/article/introduction-to-ido-mode
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+(setq ido-use-filename-at-point 'guess)
 (ido-mode 1)
 
-;; ;; ESS
+;; ESS
 (setq ess-use-auto-complete t)
 
