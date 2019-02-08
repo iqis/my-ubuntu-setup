@@ -20,9 +20,11 @@ rm ~/Downloads/rstudio.deb
 
 # python
 apt install -y python3.7 python3-pip
+pip3 install --user pipenv
 
-# python packages, jupyter
+# python packages
 pip3 install pandas scikit-learn seaborn plotly bokeh
+pip3 install --user pipenv
 
 # jupyter
 apt install -y jupyter-notebook
@@ -34,4 +36,4 @@ apt install -y git
 apt install -y docker.io
 
 # docker images
-docker pull rocker/tidyverse
+# docker pull rocker/tidyverse
